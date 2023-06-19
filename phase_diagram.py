@@ -7,14 +7,14 @@ import os
 import re
 
 
-rootdir = "/home/u1606763/Documents/PhD/Project_Work/Remote_Work/ns_workspace/Wang_LJ/cutoff_1.2"
+rootdir = "/PWD/"
 regex = re.compile('(analyse.dat)')
 
 
 anal_list = []
 
 
-exclude = ["64_atoms"]
+#exclude = ["64_atoms"]
 
 for root, dirs, files in os.walk(rootdir):
   dirs[:] = [d for d in dirs if d not in exclude]
